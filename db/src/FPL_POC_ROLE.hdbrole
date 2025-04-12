@@ -1,0 +1,13 @@
+{
+  "role": {
+    "name": "FPL_POC_HDI_ROLE",
+    "schema_privileges": [
+      {
+        "privileges": [
+          "EXECUTE",
+          "SELECT"
+        ]
+      }
+    ]
+  }
+}

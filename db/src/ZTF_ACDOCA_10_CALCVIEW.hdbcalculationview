@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Calculation:scenario xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Calculation="http://www.sap.com/ndb/BiModelCalculation.ecore" id="ZTF_ACDOCA_10_CALCVIEW" applyPrivilegeType="NONE" dataCategory="CUBE" schemaVersion="3.0" hierarchyGeneration="SQL" outputViewType="Aggregation" cacheInvalidationPeriod="NONE" enforceSqlExecution="true" application="BAS" mdsCubeConversionExecution="AT_LOADING_TIME">
+<descriptions defaultDescription="ZTF_ACDOCA_10_CALCVIEW"/>
+<localVariables/>
+<variableMappings/>
+<dataSources>
+  <DataSource id="ZTF_ACDOCA_10_TABLE">
+    <resourceUri>ZTF_ACDOCA_10_TABLE</resourceUri>
+  </DataSource>
+</dataSources>
+<snapshotProcedures/>
+<calculationViews>
+  <calculationView xsi:type="Calculation:ProjectionView" id="ACDOCA_Table">
+    <viewAttributes>
+      <viewAttribute id="RLDNR"/>
+      <viewAttribute id="RBUKRS"/>
+      <viewAttribute id="GJAHR"/>
+      <viewAttribute id="BELNR"/>
+      <viewAttribute id="DOCLN"/>
+      <viewAttribute id="HSL"/>
+    </viewAttributes>
+    <calculatedViewAttributes/>
+    <input node="ZTF_ACDOCA_10_TABLE"/>
+  </calculationView>
+</calculationViews>
+
+<logicalModel id="ACDOCA_Table">
+  <attributes>
+    <attribute id="RLDNR" order="1" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RLDNR"/>
+      <keyMapping columnObjectName="ACDOCA_Table" columnName="RLDNR"/>
+    </attribute>
+    <attribute id="RBUKRS" order="2" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="RBUKRS"/>
+      <keyMapping columnObjectName="ACDOCA_Table" columnName="RBUKRS"/>
+    </attribute>
+    <attribute id="GJAHR" order="3" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="GJAHR"/>
+      <keyMapping columnObjectName="ACDOCA_Table" columnName="GJAHR"/>
+    </attribute>
+    <attribute id="BELNR" order="4" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="BELNR"/>
+      <keyMapping columnObjectName="ACDOCA_Table" columnName="BELNR"/>
+    </attribute>
+    <attribute id="DOCLN" order="5" displayAttribute="false" attributeHierarchyActive="false">
+      <descriptions defaultDescription="DOCLN"/>
+      <keyMapping columnObjectName="ACDOCA_Table" columnName="DOCLN"/>
+    </attribute>
+  </attributes>
+  <calculatedAttributes/>
+  <baseMeasures>
+    <measure id="HSL" order="6" aggregationType="sum" measureType="simple">
+      <descriptions defaultDescription="HSL"/>
+      <measureMapping columnObjectName="ACDOCA_Table" columnName="HSL"/>
+      <exceptionAggregationMetadata/>
+    </measure>
+  </baseMeasures>
+  <calculatedMeasures>
+    <measure id="ACDOCA_COUNT" order="7" aggregationType="sum" measureType="simple" aggregatable="true" datatype="INTEGER" expressionLanguage="SQL">
+      <descriptions defaultDescription="ACDOCA_COUNT"/>
+      <formula>1</formula>
+      
+      <exceptionAggregationMetadata/>
+    </measure>
+  </calculatedMeasures>
+  <restrictedMeasures/>
+  <localDimensions/>
+</logicalModel>
+<layout>
+  <shapes>
+    <shape expanded="true" modelObjectName="Output" modelObjectNameSpace="MeasureGroup">
+      <upperLeftCorner x="111.99999999999997" y="112"/>
+    
+      <rectangleSize width="160"/>
+    </shape>
+    
+  
+    <shape expanded="true" modelObjectName="ACDOCA_Table" modelObjectNameSpace="CalculationView">
+      <upperLeftCorner x="91.99999999999997" y="217"/>
+      <rectangleSize height="30" width="200"/>
+    </shape>
+  </shapes>
+</layout>
+</Calculation:scenario>
