@@ -1,1 +1,5 @@
 https://developers.sap.com/tutorials/hana-cloud-mission-trial-10..html
+
+https://github.com/SAP-samples/teched2023-DA263/blob/main/Exercises_Content/9_0_HC_Intro/1_BAS_Getting_Started.md
+
+https://www.mindsetconsulting.com/working-with-git-in-the-business-application-studio/
